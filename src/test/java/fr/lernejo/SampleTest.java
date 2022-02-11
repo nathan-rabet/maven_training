@@ -28,5 +28,6 @@ class SampleTest {
         Assertions.assertEquals(toto.fact(15), 2004310016);
         Assertions.assertEquals(toto.fact(1), 1);
         Assertions.assertEquals(toto.fact(0), 1);
+        Assertions.assertThrows(IllegalArgumentException.class, () -> toto.fact(-5));
     }
 }

@@ -23,7 +23,7 @@ jobs:
                   echo $JAVA_HOME
             - run: ./mvnw install
             - uses: codecov/codecov-action@v1
-            - run: ./mvnw test
+#            - run: ./mvnw test
             - run: curl -Os https://uploader.codecov.io/latest/linux/codecov
             - run: chmod +x codecov
             - run: ./codecov
